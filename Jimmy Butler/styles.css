@@ -1,0 +1,335 @@
+/* RESET GERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #0a0a0a;
+  color: #f5f5f5;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+  font-family: 'Oswald', sans-serif;
+}
+
+/* HEADER */
+header {
+  background-color: #000;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid #e50914;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #e50914;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url("butler-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 2rem;
+  text-align: center;
+  color: #e50914;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.3rem;
+}
+
+/* MAIN */
+main {
+  padding: 2rem 1rem;
+}
+
+/* HISTÓRIA */
+.historia {
+  margin-bottom: 3rem;
+}
+
+.historia h2 {
+  text-align: center;
+  color: #e50914;
+  margin-bottom: 2rem;
+}
+
+.historia-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.historia-content div {
+  background-color: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 4px solid #e50914;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.historia-content div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(229, 9, 20, 0.2);
+}
+
+.historia-content h3 {
+  color: #e50914;
+  margin-bottom: 0.5rem;
+}
+
+.carreira {
+  display: grid;
+  place-items: center;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.carreira h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #e50914;
+}
+
+.carreira ul {
+  list-style: none;
+  padding: 0;
+}
+
+.carreira li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+/* ESTILO */
+.estilo-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  border-top: 3px solid #e50914;
+  padding-top: 2rem;
+}
+
+.estilo-flex div {
+  flex: 1 1 300px;
+  background-color: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 4px solid #e50914;
+  transition: transform 0.3s ease;
+}
+
+.estilo-flex div:hover {
+  transform: translateY(-5px);
+}
+
+.curiosidades {
+  padding: 40px 20px;
+  background: linear-gradient(to bottom, #111, #222);
+  color: #fff;
+  text-align: center;
+}
+
+.curiosidades h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #e50914;
+}
+
+.curiosidades-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.curiosidade {
+  background-color: #1c1c1c;
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.curiosidade:hover {
+  transform: translateY(-5px);
+}
+
+.curiosidade h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #ff3c3c;
+}
+
+.curiosidade p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+
+#estilo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 40px 20px;
+  background: linear-gradient(to bottom, #111, #222); /* Modo escuro bonito */
+  color: #fff;
+}
+
+.card {
+  background-color: #1a1a1a;
+  border: 2px solid #e50914;
+  border-radius: 16px;
+  padding: 20px;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.03);
+  background-color: #2a2a2a;
+}
+.card h3 {
+  color: #e50914;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+
+footer {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  border-top: 3px solid #e50914;
+  font-size: 0.9rem;
+}
+
+/* BOTÃO DE TEMA */
+.theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 999;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background-color: white;
+  color: #e50914;
+}
+
+/* MODO CLARO */
+body.modo-claro {
+  background-color: #fff;
+  color: #111;
+}
+
+body.modo-claro header,
+body.modo-claro footer {
+  background-color: #f9f9f9;
+  color: #000;
+  border-color: #ff4500;
+}
+
+body.modo-claro .hero {
+  background: linear-gradient(to bottom right, #ffead0, #ffe4c4);
+  color: #b22222;
+}
+
+body.modo-claro nav ul li a {
+  color: #b22222;
+}
+
+body.modo-claro nav ul li a:hover {
+  color: #ff4500;
+}
+
+body.modo-claro .grid-container,
+body.modo-claro .estilo-flex div,
+body.modo-claro .card,
+body.modo-claro .historia-content div {
+  background-color: #f4f4f4;
+  color: #222;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+body.modo-claro .theme-toggle {
+  background-color: #ff4500;
+  color: #fff;
+}
+
+body.modo-claro .theme-toggle:hover {
+  background-color: #b22222;
+  color: white;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .estilo-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+}
